@@ -9,6 +9,7 @@ class MotivationalQuotesPage extends StatefulWidget {
 class _MotivationalQuotesPageState extends State<MotivationalQuotesPage> {
   List<String> _quotes = [];
   String _currentQuote = "Carregando frase...";
+  String _lastQuote = ""; // Armazena a última frase gerada
 
   @override
   void initState() {
@@ -52,8 +53,12 @@ class _MotivationalQuotesPageState extends State<MotivationalQuotesPage> {
 
   String _getRandomQuote() {
     if (_quotes.isNotEmpty) {
-      _quotes.shuffle();
-      return _quotes.first;
+      final List<String> filteredQuotes = _quotes.where((quote) => quote != _lastQuote).toList();
+      if (filteredQuotes.isNotEmpty) {
+        filteredQuotes.shuffle();
+        _lastQuote = filteredQuotes.first; // Atualiza a última frase gerada
+        return _lastQuote;
+      }
     }
     return "Nenhuma frase disponível!";
   }

@@ -1,4 +1,4 @@
-# app_notify_me
+# gerador_frases_motivacionais
 
 A new Flutter project.
 

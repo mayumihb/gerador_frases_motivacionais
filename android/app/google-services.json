@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1060102115295",
+    "firebase_url": "https://gerador-frases-motivacionais-default-rtdb.firebaseio.com",
+    "project_id": "gerador-frases-motivacionais",
+    "storage_bucket": "gerador-frases-motivacionais.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060102115295:android:137551424de7e856e6fe6a",
+        "android_client_info": {
+          "package_name": "com.example.gerador_frases_motivacionais"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhn8pkcFXAMCtZMB__xxkeZOAp_-T8tLk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
